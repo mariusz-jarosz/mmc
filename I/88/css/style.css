@@ -1,3 +1,8 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 section {
 	margin-top: 200px;
 	margin-bottom: 50px;
@@ -12,15 +17,20 @@ div {
 }
 
 .red {
+	position: absolute;
 	background-color: tomato;
 }
 
 .blue {
+	position: absolute;
 	background-color: royalblue;
+	left: 100px;
 }
 
 .green {
+	position: absolute;
 	background-color: greenyellow;
+	left: 200px;
 }
 
 .gold {
