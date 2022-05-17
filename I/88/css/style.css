@@ -12,6 +12,7 @@ body {
 }
 
 section {
+	position: relative;
 	margin-top: 200px;
 	margin-bottom: 50px;
 	height: 300px;
@@ -27,28 +28,38 @@ div {
 .red {
 	position: absolute;
 	background-color: tomato;
+	top: 0;
 }
 
 .blue {
 	position: absolute;
 	background-color: royalblue;
 	left: 100px;
+	top: 0;
 }
 
 .green {
 	position: absolute;
 	background-color: greenyellow;
 	left: 200px;
+	top: 0;
 }
 
 .gold {
+	position: absolute;
 	background-color: gold;
+	bottom: 0;
+	right: 0;
 }
 
 .silver {
+	position: absolute;
 	background-color: silver;
+	right: 0;
+	bottom: 100px;
 }
 
 .black {
 	background-color: black;
+	display: inline-block;
 }
