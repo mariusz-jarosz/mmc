@@ -1,8 +1,15 @@
-body {
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	background-color: #333;
+	color: #fff;
+	font-size: 36px;
+}
+
 section {
 	margin-top: 200px;
 	margin-bottom: 50px;
