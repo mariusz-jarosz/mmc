@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
+	font-size: 36px;
+	color: #fff;
+}
+
+.bg {
+	width: 100vw;
+	height: 100vh;
+	background-color: #ddd;
+    transition: background-color 1s;
+}
+
+.square {
+    position: absolute;
+	width: 60px;
+	height: 60px;
+	border: 3px solid black;
+	top: 50px;
+	transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.red {
+	background-color: tomato;
+	left: 20%;
+}
+
+.red:hover ~ .bg{
+	background-color: tomato;
+}
+
+.blue {
+	background-color: royalblue;
+	left: 40%;
+}
+
+.blue:hover ~ .bg{
+	background-color: royalblue;
+}
+
+.green {
+	background-color: greenyellow;
+	left: 60%;
+}
+
+.green:hover ~ .bg {
+	background-color: greenyellow;
+}
+
+.gold {
+	background-color: gold;
+	left: 80%;
+}
+
+.gold:hover ~ .bg {
+	background-color: gold;
+}
+
+/* Ułóż kwadraty.
+Każdy kwadrat będzie miał taką samą odległość od TOP, więc można zaoszczędzić kilka linijek kodu. 😉
+
+Aby ułożyć kwadraty obok siebie, możesz kombinować z pikselami, ale spróbuj użyć %, dzięki czemu odległości będą automatycznie wyliczane.
+
+Jeśli uda Ci się ułożyć je za pomocą %, odkomentuj "transform: translateX(-50%);" w .square.
+
+Spokojnie – w kolejnym odcinku wytłumaczę, o co chodzi z tą właściwością. 😉
+
+Kiedy kwadraty będą na swoich miejscach, zmień kursor na "łapkę" (domyślnie będzie strzałka).
+
+Przeanalizuj strukturę w HTML i za pomocą kombinatorów (a raczej jednego) zrób tak, aby po najechaniu na dany kwadrat, tło strony zmieniało się na jego kolor.
+Pamiętaj o pseudoklasie, która odpowiada za najechanie. 😉
+Używaliśmy jej w odcinku o stylowaniu przycisków.
+
+Podpowiedź: zastanów się jakby to miało działać, jaka tu ma być logika.
+Co ma się stać, żeby coś się zadziało?
+
+Kiedy kolor tła będzie się zmieniał, spróbuj nadać "transition", aby animacja była płynna.
+
+Podpowiedź: transition nadajemy na elemencie, który jest animowany! */
