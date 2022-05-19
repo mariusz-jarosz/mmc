@@ -27,7 +27,7 @@ button {
 	border-radius: 5px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	transition: color, background-color, 1s;
+	transition: color 1s, background-color, 1s;
 }
 
 .squere {
