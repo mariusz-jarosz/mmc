@@ -6,6 +6,10 @@
 	margin: 0;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 }
@@ -42,12 +46,19 @@ body {
 	color: #09f;
 }
 
+section{
+	scroll-margin-top: 80px;
+}
+
 /* nawigacja */
 nav {
+	position: sticky;
+	top: 0;
 	height: 60px;
 	line-height: 60px;
 	background-color: #ddd;
 	text-align: center;
+	z-index: 10;
 }
 
 .burger-icon {
@@ -102,6 +113,9 @@ main {
 	background-position: center;
 	text-align: center;
 }
+.product:hover h3{
+	transform: scale(1.2);
+}
 .first-product {
 	background-image: url('../img/children-640.jpg');
 }
@@ -116,6 +130,7 @@ main {
 }
 .product h3 {
 	text-transform: uppercase;
+	transition: transform 0.3s;
 }
 
 /* kontakt */
