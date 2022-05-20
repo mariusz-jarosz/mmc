@@ -86,9 +86,11 @@ main {
 /* o nas */
 .about-us-info {
 	margin-bottom: 20px;
+	padding: 0 20px;
 }
 
 /* produkty */
+
 .products {
 	margin: 60px auto;
 }
@@ -150,6 +152,21 @@ main {
 	.hero-text p {
 		font-size: 18px;
 	}
+
+	.product h3 {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 992px) {
+	.product {
+		display: inline-block;
+		width: 50%;
+	}
+
+	.products-box {
+		font-size: 0;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -159,5 +176,9 @@ main {
 
 	.hero-text p {
 		font-size: 20px;
+	}
+
+	.product h3 {
+		font-size: 28px;
 	}
 }
