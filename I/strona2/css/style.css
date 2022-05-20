@@ -118,6 +118,27 @@ main {
 	text-transform: uppercase;
 }
 
+/* kontakt */
+.contact{
+	text-align: center;
+}
+
+.contact h3{
+	text-transform: uppercase;
+	margin: 20px 0 5px;
+}
+
+/* fooer */
+footer{
+	text-align: center;
+	padding: 30px 10px;
+	background-color: #ddd;
+}
+
+footer span{
+	text-transform: uppercase;
+}
+
 @media (min-width: 768px) {
 	.burger-icon {
 		display: none;
