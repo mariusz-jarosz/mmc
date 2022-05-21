@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+	top: 0;
+	margin: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #333;
+}
+
+.square {
+	height: 300px;
+	width: 300px;
+	background-color: gold;
+}
+
+@media (min-width: 500px) {
+	.square {
+		background-color: royalblue;
+	}
+}
+
+@media (min-width: 700px) {
+	.square {
+		background-color: lime;
+	}
+}
+
+@media (min-width: 550px) and (max-width: 850px) {
+	.square {
+		width: 450px;
+	}
+}
+
+@media (min-width: 800px) {
+	body {
+		/* background-color: linear-gradient(to bottom right,#002f4b,#dc4225); */
+		background-size: 400% 400%;
+		background-image: linear-gradient(
+			-45deg,
+			#ee7752,
+			#e73c7e,
+			#23a6d5,
+			#23d5ab
+		);
+		animation: gradient 15s ease infinite;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* Stwórz .square. Nadaj mu wymiary 300px x 300px.
+Body ma mieć wysokość 100vh.
+
+Oryginalnie .square ma mieć kolor gold, od breakpointa 500px ma mieć kolor royalblue, a 700px ma być lime.
+
+Od 550px do 850px .square ma mieć szerokość 450px.
+Powyżej 850px ma wrócić do swojej domyślnej szerokości.
+
+Body ma mieć domyślnie kolor #333. Od breakpointa 800px ma być nadany dowolny gradient. */
