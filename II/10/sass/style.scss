@@ -1,0 +1,17 @@
+$width: 100px;
+$height: 100px;
+$bgc: lime;
+$bgc2: tomato;
+
+div {
+	width: $width;
+	height: $height;
+}
+
+.one {
+	background-color: $bgc;
+}
+
+.two {
+	background-color: $bgc2;
+}
