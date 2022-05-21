@@ -2,11 +2,11 @@ nav ul {
   list-style: none;
 }
 
-nav li {
+nav ul li {
   background-color: red;
 }
 
-nav li a {
+nav ul li a {
   text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
