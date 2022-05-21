@@ -1,0 +1,19 @@
+/* zmienne zawsze deklarujemy w pseudoklasie root */
+:root {
+	--bgc-one: lime;
+	--bgc-two: blue;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+}
+
+.one {
+	background-color: var(--bgc-one);
+}
+
+.two {
+	background-color: var(--bgc-two);
+}
+/*# sourceMappingURL=style.css.map */
