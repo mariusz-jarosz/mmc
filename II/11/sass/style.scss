@@ -1,0 +1,22 @@
+$colors: (
+	bgc: lime,
+	bgc2: tomato
+);
+
+$size: (
+	width: 100px,
+	height: 100px
+);
+
+div {
+	width: map-get($size, width);
+	height:  map-get($size, height);
+}
+
+.one {
+	background-color: map-get($colors, bgc);
+}
+
+.two {
+	background-color: map-get($colors, bgc2);
+}
