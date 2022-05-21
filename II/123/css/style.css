@@ -1,0 +1,12 @@
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  background-color: red;
+}
+
+nav li a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
