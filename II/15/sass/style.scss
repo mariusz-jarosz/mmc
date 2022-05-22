@@ -1,9 +1,10 @@
-@import url('./_reset.scss');
+@import './reset';
+
 @mixin fz($rem) {
 	font-size: $rem;
 }
 
-$color: red;
+$red: red;
 
 @mixin bgc($color) {
 	background-color: $color;
