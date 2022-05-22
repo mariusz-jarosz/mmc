@@ -1,0 +1,7 @@
+@mixin bgc {
+    background-color: gold;
+}
+
+@mixin color($color){
+    color: $color;
+}
