@@ -1,0 +1,15 @@
+@mixin bgc {
+    background-color: gold;
+}
+
+@mixin color($color){
+    color: $color;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-size: 100px;
+    @include bgc;
+    @include color(green);
+}
