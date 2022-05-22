@@ -1,0 +1,63 @@
+@import url('./_reset.scss');
+@mixin fz($rem) {
+	font-size: $rem;
+}
+
+$color: red;
+
+@mixin bgc($color) {
+	background-color: $color;
+}
+
+@mixin circle {
+	height: 100px;
+	width: 100px;
+	margin: 30px auto;
+	background-color: lime;
+	border: 3px solid black;
+	border-radius: 50%;
+}
+
+html {
+	@include fz(10px);
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	@include fz(3rem);
+	color: $red;
+}
+
+h2 {
+	@include fz(2.4rem);
+	color: $red;
+}
+
+h3 {
+	@include fz(1.8rem);
+	color: $red;
+}
+
+p {
+	@include fz(1.6rem);
+}
+
+section {
+	height: 25vh;
+	text-align: center;
+}
+
+section:nth-child(even) {
+	@include bgc(grey);
+}
+
+section:nth-child(odd) {
+	@include bgc(royalblue);
+}
+
+.circle {
+	@include circle;
+}
