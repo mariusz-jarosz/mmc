@@ -1,0 +1,23 @@
+
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 2px;
+    color: #fff;;
+}
+.one {
+    display: flex;
+}
+.two {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.three {
+    display: flex;
+    flex-direction: column-reverse;
+}
