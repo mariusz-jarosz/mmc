@@ -1,0 +1,56 @@
+div {
+  width: 300px;
+  height: 300px;
+}
+
+.square {
+  background-color: red;
+  -webkit-animation: square 4s forwards;
+          animation: square 4s forwards;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: green;
+  -webkit-animation: circle 2s 4s;
+          animation: circle 2s 4s;
+}
+
+@-webkit-keyframes square {
+  50% {
+    width: 600px;
+    height: 300px;
+  }
+  100% {
+    height: 600px;
+    background-color: gold;
+  }
+}
+
+@keyframes square {
+  50% {
+    width: 600px;
+    height: 300px;
+  }
+  100% {
+    height: 600px;
+    background-color: gold;
+  }
+}
+
+@-webkit-keyframes circle {
+  from {
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+@keyframes circle {
+  from {
+  }
+  to {
+    background-color: blue;
+  }
+}
+/*# sourceMappingURL=style.css.map */
