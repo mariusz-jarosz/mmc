@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 72px;
+}
+
 body {
   position: relative;
   font-family: Roboto, sans-serif;
@@ -126,9 +130,24 @@ header .bi-chevron-double-down {
   font-size: 14px;
 }
 
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
+
+.aboutus .aboutus-hover {
+  -webkit-transition: color 0.6s;
+  transition: color 0.6s;
+}
+
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url(../img/playstation-1920.jpg);
+  }
+}
+
+@media (max-height: 850px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 /*# sourceMappingURL=main.css.map */

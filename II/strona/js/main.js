@@ -8,4 +8,13 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
     window.addEventListener('scroll', addShadow)
+
+    const navShow = document.querySelector('.collapse')
+    const navA = document.querySelectorAll('.nav-link')
+    function removeShow(){
+        
+    }
+    window.addEventListener('click', removeShow)
+
+    navA.forEach(item => item.addEventListener('click', () => navShow.classList.remove('show')))
 })
