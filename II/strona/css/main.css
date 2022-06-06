@@ -1,3 +1,19 @@
+.portfolio .carousel-item {
+  height: 600px;
+}
+
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
 *,
 *::after,
 *::before {
@@ -139,7 +155,7 @@ header .bi-chevron-double-down {
   transition: color 0.6s;
 }
 
-.portfolio {
+.aboutus-hero {
   position: relative;
   background-image: url(../img/technology-640.jpg);
   background-size: cover;
@@ -149,7 +165,7 @@ header .bi-chevron-double-down {
   color: #fff;
 }
 
-.portfolio .portfolio-shadow {
+.aboutus-hero .aboutus-hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -158,25 +174,25 @@ header .bi-chevron-double-down {
   z-index: -10;
 }
 
-.portfolio i {
+.aboutus-hero i {
   margin-top: 20px;
   font-size: 30px;
 }
 
-.portfolio .portfolio-card-title {
+.aboutus-hero .aboutus-hero-card-title {
   font-size: 18px;
   text-transform: uppercase;
 }
 
-.portfolio .portfolio-card-text {
+.aboutus-hero .aboutus-hero-card-text {
   font-size: 14px;
 }
 
-.portfolio .portfolio-hover:hover {
+.aboutus-hero .aboutus-hero-hover:hover {
   color: #039dff;
 }
 
-.portfolio .portfolio-hover {
+.aboutus-hero .aboutus-hero-hover {
   -webkit-transition: color 0.6s;
   transition: color 0.6s;
 }
@@ -184,6 +200,9 @@ header .bi-chevron-double-down {
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url(../img/playstation-1920.jpg);
+  }
+  .aboutus-hero {
+    background-image: url(../img/technology-1920.jpg);
   }
 }
 

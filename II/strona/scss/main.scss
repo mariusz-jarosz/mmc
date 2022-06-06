@@ -1,4 +1,5 @@
 @import './colors';
+@import './portfolio';
 
 *,
 *::after,
@@ -60,7 +61,7 @@ nav {
 }
 
 header {
-	color: $white;
+    color: $white;
 	h1 {
 		text-transform: uppercase;
 	}
@@ -124,7 +125,7 @@ header {
 	}
 }
 
-.portfolio {
+.aboutus-hero {
 	position: relative;
 	background-image: url(../img/technology-640.jpg);
 	background-size: cover;
@@ -133,7 +134,7 @@ header {
 	z-index: 0;
 	color: $white;
 
-    .portfolio-shadow {
+    .aboutus-hero-shadow {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -147,19 +148,19 @@ header {
 		font-size: 30px;
 	}
 
-	.portfolio-card-title {
+	.aboutus-hero-card-title {
 		font-size: 18px;
 		text-transform: uppercase;
 	}
 
-	.portfolio-card-text {
+	.aboutus-hero-card-text {
 		font-size: 14px;
 	}
 
-	.portfolio-hover:hover {
+	.aboutus-hero-hover:hover {
 		color: $colorMain;
 	}
-	.portfolio-hover {
+	.aboutus-hero-hover {
 		transition: color 0.6s;
 	}
 }
@@ -171,6 +172,10 @@ header {
 			background-image: url(../img/playstation-1920.jpg);
 		}
 	}
+
+    .aboutus-hero {
+        background-image: url(../img/technology-1920.jpg);
+    }
 }
 
 @media (max-height: 850px) {
