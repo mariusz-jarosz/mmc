@@ -127,6 +127,26 @@ p.text-muted strong {
   height: 160px;
 }
 
+.achievements i {
+  font-size: 48px;
+  padding: 10px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.achievements .achievements-list {
+  padding: 20px 0;
+}
+
+.achievements .number {
+  font-size: 22px;
+}
+
+.achievements .descryption {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
 *,
 *::after,
 *::before {

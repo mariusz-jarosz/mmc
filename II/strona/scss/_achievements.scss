@@ -1,0 +1,22 @@
+.achievements {
+	i {
+		font-size: 48px;
+        padding: 10px;
+        color: $white;
+        text-shadow: 0 0 5px #000;
+	}
+
+    .achievements-list{
+padding: 20px 0;
+
+    }
+
+    .number{
+        font-size: 22px;
+    }
+
+    .descryption{
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+}
