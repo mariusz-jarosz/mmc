@@ -23,7 +23,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                     <a class="nav-link" href="#aboutus">o nas</a>
                     <a class="nav-link" href="#portfolio">portfolio</a>
                     <a class="nav-link" href="#prices">ceny</a>
@@ -34,7 +34,7 @@
             </div>
         </div>
     </nav>
-    <header>
+    <header id="home">
         <div class="hero-img">
             <div class="hero-shadow"></div>
             <div class="hero-text">
@@ -109,13 +109,12 @@
             </div>
         </section>
         <section id="portfolio" class="portfolio bg-light py-5">
-
             <h2>portfolio</h2>
             <div class="underline mb-5"></div>
-            <div class="container">
+            <div class="container pb-4">
                 <div class="row">
-                    <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block carousel-fade" data-bs-ride="carousel"" >
-                        <div class="carousel-indicators">
+                    <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block carousel-fade" data-bs-ride="carousel">
+                        <div class=" carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -152,7 +151,77 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+                    <div class="card-group d-lg-none">
+                        <div class="card me-sm-3">
+                            <img src="./img/carusel-game-640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card me-sm-3"">
+                          <img src=" ./img/carusel-joysticks-640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                        <div class="card me-sm-3"">
+                          <img src=" ./img/carusel-video-640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section id="prices" class="prices py-5 bglight">
+            <h2>ceny</h2>
+            <div class="underline mb-5"></div>
+            <div class="container pb-4">
+                <div class="price-wrap row text-center justify-content-center">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box">
+                            <h3>mobile</h3>
+                            <hr>
+                            <p><span>Użądzenia:</span><i class="bi bi-phone"></i></p>
+                            <p><span>Długość gry:</span> krótka</p>
+                            <p><span>Grafika:</span> średnia</p>
+                            <p><span>Online:</span> brak</p>
+                            <p class="price-tag">499zł</p>
+                            <button class="btn btn-secondary">zamawiam</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box">
+                            <h3>mobile & pc</h3>
+                            <hr>
+                            <p><span>Użądzenia:</span><i class="bi bi-laptop"></i></p>
+                            <p><span>Długość gry:</span> krótka</p>
+                            <p><span>Grafika:</span> średnia</p>
+                            <p><span>Online:</span> brak</p>
+                            <p class="price-tag">599zł</p>
+                            <button class="btn btn-primary">zamawiam</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box">
+                            <h3>full pack</h3>
+                            <hr>
+                            <p><span>Użądzenia:</span><i class="bi bi-phone"></i><i class="bi bi-laptop"></i></p>
+                            <p><span>Długość gry:</span> krótka</p>
+                            <p><span>Grafika:</span> średnia</p>
+                            <p><span>Online:</span> brak</p>
+                            <p class="price-tag">699zł</p>
+                            <button class="btn btn-secondary">zamawiam</button>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet <a href="#contect">consectetur</a> adipisicing elit. Saepe repudiandae repellat quia deleniti amet quam quasi nam ipsam, consectetur odit aliquid?</p>
+                <p class="text-muted">Lorem ipsum dolor sit amet <strong>consectetur</strong>  adipisicing elit. Consectetur, omnis.
+                </p>
             </div>
         </section>
     </main>
