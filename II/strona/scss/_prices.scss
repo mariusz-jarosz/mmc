@@ -33,6 +33,10 @@
         padding: 0 10px;
 	}
 
+    .container p:first-of-type {
+        margin-top: 40px;
+    }
+
 	
 }
 
@@ -43,10 +47,6 @@
 	a {
 		text-decoration: none;
 	}
-}
-
-.container p:first-of-type {
-	margin-top: 40px;
 }
 
 p.text-muted strong {
