@@ -1,0 +1,54 @@
+.price-wrap {
+	.price-box {
+		background-color: $white;
+		padding: 30px;
+        margin: 30px 10px;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+        transition: transform 0.2s;
+        h3 {
+            text-transform: uppercase;
+            color: $colorMain;
+        }
+	}
+
+    .price-box:hover{
+        transform: scale(1.05);
+    }
+
+	.price-box span {
+		font-weight: 700;
+	}
+
+	.price-tag {
+		font-size: 36px;
+		font-weight: 700;
+	}
+
+	.btn {
+		text-transform: uppercase;
+	}
+
+	i {
+		font-size: 24px;
+        padding: 0 10px;
+	}
+
+	
+}
+
+.container p {
+	justify-content: center;
+	text-align: center;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.container p:first-of-type {
+	margin-top: 40px;
+}
+
+p.text-muted strong {
+	text-transform: uppercase;
+}
