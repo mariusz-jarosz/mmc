@@ -1,0 +1,17 @@
+.one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	background-color: #fff;
+	transform: scaleX(0);
+	transform-origin: right;
+    // transition: transform 0.3s;
+}
+
+.one:hover::after {
+	transform: scale(1);
+	transform-origin: left;
+}
