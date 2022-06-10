@@ -21,7 +21,7 @@ body {
 	box-shadow: 0 0 15px rgba(0, 140, 255, 0.6);
 }
 
-.link {
+.link{
 	position: relative;
 	padding: 10px 20px;
 	font-size: 48px;
@@ -32,7 +32,11 @@ body {
 .link,
 .link::after,
 .link::before {
-	transition: transform 0.3s;
+	transition: all 0.3s;
 }
 
 @import './one';
+@import './two';
+@import './three';
+@import './four';
+@import './five';

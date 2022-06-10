@@ -1,0 +1,74 @@
+.five {
+	z-index: 0;
+}
+
+.five:hover {
+	animation: blink 0.5s;
+    color: #000;
+}
+
+.five::before,
+.five::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 0;
+	background-color: #fff;
+	z-index: -1;
+}
+
+.five::before {
+	left: 0;
+}
+
+.five::after {
+	right: 0;
+}
+
+.five:hover::before,
+.five:hover::after {
+	animation: background 0.5s forwards;
+}
+
+@keyframes background {
+	from {
+		width: 0;
+	}
+	to {
+		width: 50%;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	10% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

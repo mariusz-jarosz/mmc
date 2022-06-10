@@ -8,7 +8,7 @@
 	background-color: #fff;
 	transform: scaleX(0);
 	transform-origin: right;
-    // transition: transform 0.3s;
+    transition: transform 0.3s;
 }
 
 .one:hover::after {

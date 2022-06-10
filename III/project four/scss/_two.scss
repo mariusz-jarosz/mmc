@@ -1,0 +1,29 @@
+.two::before,
+.two::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.two::before {
+	top: -2px;
+	left: -8px;
+	border-top: 3px solid #fff;
+	border-left: 3px solid #fff;
+}
+
+.two::after {
+	bottom: -2px;
+	right: -8px;
+	border-bottom: 3px solid #fff;
+	border-right: 3px solid #fff;
+}
+
+.two:hover::before,
+.two:hover::after {
+	width: 50%;
+	height: 50%;
+	opacity: 1;
+}

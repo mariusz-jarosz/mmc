@@ -43,10 +43,8 @@ body {
 .link,
 .link::after,
 .link::before {
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .one::after {
@@ -61,6 +59,10 @@ body {
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .one:hover::after {
@@ -68,5 +70,200 @@ body {
           transform: scale(1);
   -webkit-transform-origin: left;
           transform-origin: left;
+}
+
+.two::before,
+.two::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.two::before {
+  top: -2px;
+  left: -8px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+
+.two::after {
+  bottom: -2px;
+  right: -8px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+
+.two:hover::before,
+.two:hover::after {
+  width: 50%;
+  height: 50%;
+  opacity: 1;
+}
+
+.three::before,
+.three::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  border-bottom: 3px solid #fff;
+}
+
+.three::before {
+  right: 50%;
+}
+
+.three::after {
+  left: 50%;
+}
+
+.three:hover::before,
+.three:hover::after {
+  width: 50%;
+}
+
+.four {
+  z-index: 0;
+}
+
+.four::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.four:hover::after {
+  height: 100%;
+  color: #000;
+}
+
+.four:hover {
+  color: #000;
+}
+
+.five {
+  z-index: 0;
+}
+
+.five:hover {
+  -webkit-animation: blink 0.5s;
+          animation: blink 0.5s;
+  color: #000;
+}
+
+.five::before,
+.five::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.five::before {
+  left: 0;
+}
+
+.five::after {
+  right: 0;
+}
+
+.five:hover::before,
+.five:hover::after {
+  -webkit-animation: background 0.5s forwards;
+          animation: background 0.5s forwards;
+}
+
+@-webkit-keyframes background {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes background {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
