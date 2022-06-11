@@ -1,0 +1,52 @@
+.slide {
+	width: 180px;
+	height: 95px;
+
+	.span1,
+	.span2 {
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+        transition: 0.5s;
+	}
+
+	.span1 {
+		left: 50%;
+	}
+
+	.span2 {
+		left: -50%;
+        transition-delay: 0.1s;
+	}
+}
+
+.slide::after {
+	height: 100%;
+	top: 0;
+	left: -20px;
+	border-left: 2px solid #fff;
+}
+
+.slide:hover::after {
+	left: 300px;
+}
+
+.slide::before {
+	width: 100%;
+	top: -10px;
+	left: 0;
+	border-top: 2px solid #fff;
+	transition-delay: 0.1s;
+}
+
+.slide:hover::before {
+	top: 100px;
+}
+
+.slide:hover .span1{
+    left: 150%;
+}
+
+.slide:hover .span2{
+    left: 50%;
+}

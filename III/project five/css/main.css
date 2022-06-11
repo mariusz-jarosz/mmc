@@ -22,4 +22,85 @@ body {
   background-color: #333;
   overflow: hidden;
 }
+
+button {
+  position: relative;
+  margin: 20px;
+  padding: 30px 50px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+button::before,
+button::after {
+  display: block;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.slide {
+  width: 180px;
+  height: 95px;
+}
+
+.slide .span1,
+.slide .span2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slide .span1 {
+  left: 50%;
+}
+
+.slide .span2 {
+  left: -50%;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.slide::after {
+  height: 100%;
+  top: 0;
+  left: -20px;
+  border-left: 2px solid #fff;
+}
+
+.slide:hover::after {
+  left: 300px;
+}
+
+.slide::before {
+  width: 100%;
+  top: -10px;
+  left: 0;
+  border-top: 2px solid #fff;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.slide:hover::before {
+  top: 100px;
+}
+
+.slide:hover .span1 {
+  left: 150%;
+}
+
+.slide:hover .span2 {
+  left: 50%;
+}
 /*# sourceMappingURL=main.css.map */
