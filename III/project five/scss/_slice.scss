@@ -1,0 +1,23 @@
+.slice::before,
+.slice::after {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(24, 147, 230);
+}
+
+.slice::before {
+	top: -50%;
+	left: -100%;
+}
+
+.slice::after {
+	bottom: -50%;
+	right: -1005px;
+}
+
+.slice:hover::before {
+	left: 0;
+}
+.slice:hover::after {
+	right: 0;
+}
